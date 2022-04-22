@@ -1,0 +1,262 @@
+/* COLORS START */
+
+:root {
+  --color-1: #FFFFFF;
+  --color-2: #DB9158;
+  --color-3: #EFF3F6;
+  --color-4: #172940;
+  --color-5: #EB4688;
+  --color-6: #AAA854;
+  --color-7: #6C8099;
+  --color-8: #AAAA9B;
+  --color-9: #F2F5F8;
+  --color-10: #EE7F7B;
+  --color-11: #B1CA9E;
+  --color-12: #AED4F5;
+}
+
+/* COLORS END */
+
+/* GENERAL SET START */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* Default value 16px */
+  font-size: 1rem;
+}
+
+body {
+  background: var(--color-9);
+  font-family: sans-serif;
+}
+
+/* NAVBAR START */
+
+.header__menu {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--color-3);
+}
+
+.nav__logo__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background: var(--color-1);
+  box-shadow: -6px 2px 10px 2px var(--color-12);
+}
+
+.ul__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.a__logo {
+  color: var(--color-4);
+  font-weight: bolder;
+  padding: 0 3.8rem;
+}
+
+li {
+  cursor: pointer;
+  color: var(--color-2);
+}
+
+em {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  color: var(--color-5);
+  font-weight: 900;
+}
+
+/* NAVBAR END */
+
+.main__products {
+  padding: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 1.5rem;
+ 
+}
+
+.article__dish {
+  display: flex;
+  width: 100%;
+
+  
+}
+
+
+.dish__info h4{
+  display: inline;
+  justify-content: space-between;
+}
+
+
+img {
+  object-fit: cover;
+  height: 100px;
+  width: 190px;
+  border: 0.2rem solid var(--color-2);
+  border-radius: 0.2rem;
+}
+
+
+.dish__info h4 {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: var(--color-2);
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  border-top: 0.02rem solid var(--color-2);
+}
+
+li {
+  text-transform: capitalize;
+}
+
+.active {
+  color: white;
+  font-weight: 900;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: var(--color-2);
+}
+
+.div__cart {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-1);
+  min-height: 5rem;
+  min-width: 20rem;
+  margin: 0 2rem 2rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: -2px 1px 10px -3px rgba(0,0,0,0.2);
+}
+
+.div__titles {
+  display: flex;
+  width: 95%;
+  font-weight: bolder;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div__add {
+  display: flex;
+  justify-content: flex-end;
+  width: 20rem;
+  background-color: rgba(174,212,245,0.3);
+}
+
+.div__add > button {
+  border: none;
+  background: var(--color-12);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  width: 25%;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+
+.div__order__items {
+  margin: 0.5rem 0;
+  max-width: 20rem;
+  /* border: 2px solid royalblue; */
+}
+
+.div__buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.button__red {
+  margin: 0.2rem;
+  width: 10rem;
+  color: var(--color-1);
+  padding: 0.2rem;
+  font-weight: 900;
+  background: var(--color-10);
+  border: none;
+}
+
+.button__green {
+  margin: 0.2rem;
+  width: 10rem;
+  color: var(--color-1);
+  padding: 0.2rem;
+  font-weight: 900;
+  background: var(--color-6);
+  border: none;
+}
+
+.dish__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__Add {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.btn__To__Cart {
+  align-self: flex-end;
+  cursor: pointer;
+  color: var(--color-2);
+  font-weight: bolder;
+  border: none;
+  background: transparent;
+}
+
+.span__trash {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.span__trash:hover {
+  opacity: 0.5;
+}
+
+.div__cart_order__list {
+  display: flex;
+  width: 18rem;
+  justify-content: space-between;
+}
+
